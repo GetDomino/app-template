@@ -1,0 +1,29 @@
+version: 1.0.0
+name: Example App
+description: An example app
+uuid: example-app
+logoUrl: https://img.domino.run/api/builtin-app-icon?a=4&icon=fad%20fa-play-circle
+actions:
+- requiresAuth: false
+  name: Hello World
+  description: Just a simple hello world action
+  uuid: hello-world
+  inputs: []
+  outputs: []
+  script: dist/actions/hello-world.js
+
+triggers:
+- name: World Greeted
+  uuid: world-greeted
+  type: webhook
+  outputs: []
+  mappingType: action
+  mapping: {}
+  mappingActionId:
+  description: 'Triggered when the world is greeted'
+  canHaveConditions: false
+  canHaveConfig: false
+  configSchema: []
+  isMultiTriggerEnabled: false
+
+dynamicFields: []
