@@ -1,11 +1,7 @@
 {
   "extends": "./node_modules/domino-sdk/tsconfig.base.json",
   "compilerOptions": {
-    "rootDir": "./",                                      /* Specify the root folder within your source files. */
+    "rootDir": "./src",                                   /* Specify the root folder within your source files. */
     "outDir": "./dist",                                   /* Specify an output folder for all emitted files. */
-  },
-  "include": [
-    "./src/**/*.ts",
-    "./node_modules/domino-sdk/packages/index.d.ts", /* Required so Typescript won't throw errors when Domino Runtime globals are accessed */
-  ]
+  }
 }

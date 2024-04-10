@@ -1,12 +1,12 @@
 {
   "name": "domino-app-template",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
   "devDependencies": {
     "typescript": "^5.2.2"
   },
   "dependencies": {
+    "@domino-sdk/core": "^0.0.2",
     "domino-sdk": "^0.0.2"
   }
 }
