@@ -8,5 +8,10 @@
   "dependencies": {
     "@domino-sdk/core": "^0.0.2",
     "domino-sdk": "^0.0.2"
+  },
+  "scripts": {
+    "build": "domino build",
+    "publish:staging": "domino build && domino publish --apiUrl=http://localhost:3000/graphql --config=~/.domino/config.json.staging",
+    "publish:production": "domino build && domino publish --apiUrl=https://api.domino.run/graphql --config=~/.domino/config.json.prod"
   }
 }
